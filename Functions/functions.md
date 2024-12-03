@@ -117,6 +117,19 @@ with open("output.txt", "w") as f:
 2. The text "Hello, File!" is written to the file.
 3. The file is closed automatically.
 
+#### If you do not use the with statement, you need to explicitly close the file after writing to it using the close() method. Here’s how you can do it:
+
+```python
+# Open the file in write mode
+f = open("output.txt", "w")
+
+# Write to the file
+print("Hello, File!", file=f)
+
+# Close the file
+f.close()
+
+```
 ----
 
 ### How Functions Work (Step-by-Step):
