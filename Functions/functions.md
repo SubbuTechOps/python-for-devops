@@ -129,6 +129,7 @@ with open("output.txt", "w") as f:
 
 **Return:** If there is a **return** statement, the function sends back a value. If not, it returns **None**.
 
+![flow-example](./images/flow.png)
 ---
 
 ### Key Concepts of Functions:
