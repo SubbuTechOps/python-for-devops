@@ -98,8 +98,8 @@ print(*objects, file=stream)
 **Example:**
 ```python
 with open("output.txt", "w") as f:
-    print("Hello, File!", file=f)
-# The text "Hello, File!" is written to `output.txt`.
+    print("Hello, Subbu!", file=f)
+# The text "Hello, Subbu!" is written to `output.txt`.
 ```
 
 - open: Built-in Python function -> Opens the file (output.txt) in the specified mode (w).
