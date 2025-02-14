@@ -23,6 +23,32 @@ flowchart TB
     H --> I("Display output")
 ```
 
+### Text to String Conversion:
+- When you pass an object to print(), Python needs it in string form
+```
+# 1. If already a string, no conversion needed
+print("Hello")  # Already a string
+
+# 2. For other types, Python calls __str__ method
+```
+
+#### Integer to String Conversion Example:
+
+```mermaid
+flowchart TB
+    A["print(42)"] --> B["Python receives integer 42"]
+    B --> C["int.__str__() method called"]
+    C --> D["Converts 42 to string '42'"]
+    D --> E["Encode '42' to bytes"]
+    E --> F["Write bytes to buffer"]
+    F --> G["Flush buffer"]
+    G --> H["Display 42"]
+```
+
+### String to Bytes Encoding (UTF-8):
+- Computers can only work with bytes (1s and 0s)
+- String encoding converts characters to their byte representation
+  
 ### Bytes are written to a buffer:
 - A buffer is a temporary memory storage area
 - Instead of writing each character directly to the screen/file one at a time, Python first collects them in this buffer
