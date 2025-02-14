@@ -8,7 +8,7 @@
 - The bytes are written to a buffer
 - The buffer is flushed (due to automatic newline)
 - The operating system receives the write command
-- The text appears on your screen/
+- The text appears on your screen
 
 ### A flow chart to explain the internal workings of print("Hello World!") in Python.
 ```mermaid
