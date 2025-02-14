@@ -49,4 +49,10 @@ for i in range(5):
     # Output appears immediately after each print
 ```
 
+### This buffering mechanism is particularly important when:
+
+1. Writing logs to files
+2. Displaying real-time progress updates
+3. Debugging programs where timing matters
+4. Writing to pipes or network connections
   
