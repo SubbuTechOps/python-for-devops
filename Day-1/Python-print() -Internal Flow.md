@@ -1,6 +1,6 @@
 ## Internal workings of print("Hello World!") in Python
 
-## You call print("Hello World!")
+- You call print("Hello World!")
 - The Python interpreter receives this command
 - Python checks if sys.stdout is available
 - The text is converted to a string if it isn't already
