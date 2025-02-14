@@ -22,3 +22,31 @@ flowchart TB
     G --> H("OS system call")
     H --> I("Display output")
 ```
+
+### Bytes are written to a buffer:
+- A buffer is a temporary memory storage area
+- Instead of writing each character directly to the screen/file one at a time, Python first collects them in this buffer
+- This buffering process improves performance because:
+    - Writing to output devices (screen/file) is relatively slow
+    - Grouping multiple writes together is more efficient than individual writes
+    - It reduces system calls to the operating system
+
+### Buffer is flushed (due to automatic newline):
+- "Flushing" means the content in the buffer is actually written to the output device
+- The print() function automatically adds a newline character ('\n') by default
+- When Python sees a newline character, it triggers a buffer flush
+- You can control this behavior in print():
+```
+# Without flush
+for i in range(5):
+    print("Processing...", end='')
+    # Output might not appear immediately
+    # Stays in buffer until newline or buffer is full
+
+# With flush
+for i in range(5):
+    print("Processing...", end='', flush=True)
+    # Output appears immediately after each print
+```
+
+  
